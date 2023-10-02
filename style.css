@@ -1,56 +1,65 @@
-* {
-    box-sizing:border-box;
-    font-size: 15px;
-}
+/* Geometric Abstract Pattern with Glass Morphism Effect */
 
+/* Set background color */
 body {
-    background-color: azure;
-    margin: 0;
-}
-
-.register {
-    width: 400px;
-    background-color: bisque;
-    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 3);
-    margin: 100px auto;
-}
-
-.register h1 {
-    text-align: center;
-    color: brown;
-    font-size: 24px;
-    padding: 20px 0 20px 0;
-    border-bottom: 1px solid #dee0de;
-}
-
-.register form {
+    background-image: url('jean-philippe-delberghe-75xPHEQBmvA-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  /* Center the form */
+  .register {
+    font-family: 'Helvetica', sans-serif;
+  font-weight: 400;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    padding-top: 20px;
-}
-
-.register form input [type="password"], .register form input [type="text"], register form input [type="email"] {
-    width: 310px;
-    height: 50px;
-    border: 1px solid #dee0de;
-    margin-bottom: 20px;
-    padding: 0 15px;
-}
-
-.register form input [type="submit"] {
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Apply glass morphism effect to the form */
+  .register form {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(40px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    border-radius: 10px;
+  }
+  
+  /* Style form elements */
+  .register form h1 {
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+  
+  .register form label {
+    display: none;
+  }
+  
+  .register form input[type="text"],
+  .register form input[type="password"],
+  .register form input[type="email"],
+  .register form input[type="submit"] {
     width: 100%;
-    padding: 15px;
-    margin-top: 20px;
-    background-color: blanchedalmond;
-    border: 0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 300;
+  }
+  
+  .register form input[type="submit"] {
+    background-color: #007aff;
+    color: #fff;
     cursor: pointer;
-    font-weight: bold;
-    color: aquamarine;
-    transition: background-color 0.2s ;
-}
-
-.register form input [type="submit"] :hover {
-    background-color: #2868c7;
-    transition: background-color 0.2s ;
-}
+  }
+  
+  .register form input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
